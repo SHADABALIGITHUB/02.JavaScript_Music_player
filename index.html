@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Autour+One&family=DM+Sans:opsz@9..40&family=Dancing+Script:wght@500&family=Inknut+Antiqua:wght@900&family=Kalam:wght@700&family=Roboto&family=Roboto+Mono:ital,wght@1,700&family=Vina+Sans&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="m-0 p-0 overflow-hidden">
+
+    <div id="main" class="m-0 p-0 h-screen w-screen bg-gradient-to-tr from-slate-800 to-black bg-opacity-20">
+
+        <div class="bg-zinc-600 text-white shadow-2xl shadow-black" id="dice">
+
+
+            <nav>
+                <div class="flex sm:pl-4 sm:pr-4 h-16 justify-between items-center ">
+
+                    <div class="p-1 sm:p-3"> <i class="inline m-1" data-lucide="headphones" color="white"></i>
+                        <h2 style="font-family: 'Roboto';" class="hidden sm:inline m-2 font-Sixtyfour">Shadab Music</h2>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <input type="text" class="border-white rounded-2xl p-1.5 pl-5 w-32 text-black shadow-inner" placeholder="Search..">
+                        <div class="flex items-center hover:text-red-100"> <i data-lucide="receipt-indian-rupee" color="white"></i> <h4> <a href="./Components/Subscription.html" target="_blank">Subscription</a></h4>  </div>
+                        <div class="hidden sm:flex"><i data-lucide="user"></i> <h3>Admin</h3> </div> 
+                        <div  class="p-1" id="burger"><i data-lucide="menu"></i></div>
+                        <div id="Div_Burger" class="hidden w-48 h-full sm:w-48 sm:h-64 sm:m-3 bg-gradient-to-tr from-zinc-800 to-black shadow-black shadow-2xl absolute right-0 top-0 sm:right-3 sm:top-8 sm:rounded-3xl sm:p-18 z-50 perspective-3d transform-3d">
+                             <!-- <div> <a href="#"> <i data-lucide="Download"></i> Download App</a>  </div>  -->
+
+                               <!-- Content Section -->
+                               <div id="overlay" class="z-20 fixed top-0 left-0 w-full h-full opacity-50 bg-slate-900"></div>
+
+    <div class="container mx-auto p-4 z-50">
+        <div class="flex justify-around">
+        <h3 class="text-sm font-bold mb-8 flex-nowrap"> Login / SignUp </h3>
+        <i id="close_burger" data-lucide="x-circle"></i>
+       </div>
+
+        <!-- Icons Section -->
+        <div class="mb-8 ">
+            <!-- Icon 1 -->
+            <div class="text-white flex">
+                <i data-lucide="home"></i>
+                <p class="text-sm font-bold">Home</p>
+            </div>
+
+            <!-- Icon 2 -->
+            <div class="text-white flex">
+                <i data-lucide="receipt-indian-rupee"></i>
+                <p class="text-sm font-bold">Check Subscription</p>
+            </div>
+
+            <!-- Icon 3 -->
+            <div class="text-white">
+                <i class="fas fa-circle text-4xl"></i>
+                <p class="text-sm">Icon 3</p>
+            </div>
+
+            <!-- Icon 4 -->
+            <div class="text-white">
+                <i class="fas fa-square text-4xl"></i>
+                <p class="text-sm">Icon 4</p>
+            </div>
+        </div>
+
+        <!-- Social Media Icons Section -->
+        <div class="flex items-center space-x-4">
+            <!-- Instagram -->
+            <a href="#" class="text-pink-600">
+                <i class="fab fa-instagram text-2xl"></i>
+            </a>
+
+            <!-- Twitter -->
+            <a href="#" class="text-blue-400">
+                <i class="fab fa-twitter text-2xl"></i>
+            </a>
+
+            <!-- Facebook -->
+            <a href="#" class="text-blue-600">
+                <i class="fab fa-facebook text-2xl"></i>
+            </a>
+
+            <!-- YouTube -->
+            <a href="#" class="text-red-600">
+                <i class="fab fa-youtube text-2xl"></i>
+            </a>
+        </div>
+    </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+<!-- 
+            <section>
+                  
+            </section> -->
+
+        </div>
+
+            <section class="second_Navbar">
+
+                 <div class="w-full h-8 overflow-scroll sm:overflow-hidden scrollbar-none flex bg-zinc-900 text-white font-extralight gap-10 mt-1 pl-4 pr-4 ">
+
+                         <a class=" cursor-pointer active:scale-x-105 hover:text-slate-400 text-sm flex-nowrap whitespace-nowrap" id="All" >All</a>
+                         <a class=" cursor-pointer active:scale-x-105 hover:text-slate-400 text-sm flex-nowrap whitespace-nowrap" id="Trending" >Trending Now</a>
+                         <a class=" cursor-pointer active:scale-x-105 hover:text-slate-400 text-sm flex-nowrap whitespace-nowrap" id="Old" >Old Songs</a>
+                         <a class=" cursor-pointer active:scale-x-105 hover:text-slate-400 text-sm flex-nowrap whitespace-nowrap" id="New_song" >New Songs</a>
+                         <a class=" cursor-pointer active:scale-x-105 hover:text-slate-400 text-sm flex-nowrap whitespace-nowrap" id="Mood" >Moods & Genry</a>
+                         <a class=" cursor-pointer active:scale-x-105 hover:text-slate-400 text-sm flex-nowrap whitespace-nowrap" id="Podcast" >Podcast</a>
+    
+
+                 </div>
+
+            </section>
+
+            <section class="section_All w-screen absolute flex">
+
+                
+
+                      <div  class="my-divs w-11/12 sm:w-1/2 md:w-1/3 h-40 sm:h-80">
+
+
+                             <div id="scrolling_div1" class="absolute shad m-0 w-1/2 h-full bg-cover bg-clip-padding bg-no-repeat rounded-3xl" style="background-image: url('./Image/Tera_Bina.jpeg')">
+
+                                   
+
+                             </div>
+
+                             <div id="scrolling_div2" class="left-1/2 absolute shad m-0 w-1/2 h-full bg-cover bg-clip-padding bg-no-repeat rounded-3xl" style="background-image: url('./Image/Bollywood.png');">
+
+                              
+
+                             </div>
+
+                             <div id="scrolling_div3" class="absolute shad m-0 w-1/2  h-full bg-cover bg-clip-padding bg-no-repeat rounded-3xl" style="background-image: url('./Image/hollywood.jpg');">
+
+                              
+
+                             </div>
+                             <div id="scrolling_div4" class="left-1/2 absolute shad  m-0 w-1/2 h-full bg-cover bg-clip-padding bg-no-repeat rounded-3xl" style="background-image: url('./Image/Hookah.jpg');">
+
+                              
+
+                             </div>
+                             <div id="scrolling_div5" class="absolute shad m-0 w-1/2 h-full bg-cover bg-clip-padding bg-no-repeat rounded-3xl" style="background-image: url('./Image/hiphopwebp');">
+
+                              
+
+                             </div>
+                             <div id="scrolling_div6" class="left-1/2 absolute shad m-0 w-1/2 h-full bg-cover bg-clip-padding bg-no-repeat rounded-3xl" style="background-image: url(./Image/danny-howe-bn-D2bCvpik-unsplash.png);">
+
+                              
+
+                             </div>
+
+                                  
+                                
+
+                      </div>
+
+                    
+                     
+              </section>
+
+              <section class="section_Trending_Now absolute hidden">
+
+                <div class="w-screen h-32 bg-rose-900">
+                            <!-- <h3>trending</h3> -->
+
+                            <div class="w-1/2">
+                                 
+                                  
+                            </div>
+
+                            <div>
+
+                            </div>
+                             <div class="flex">
+
+
+
+                             </div>
+                </div>
+               
+            </section>
+
+            <section class="section_old_song absolute hidden">
+
+                <div class="w-screen h-32 bg-pink-800">
+                          <h3>old </h3>
+                </div>
+               
+            </section>
+
+            <section class="section_new_song absolute hidden">
+
+                <div class="w-screen h-32 bg-red-800">
+                        <h3>new song </h3>
+                </div>
+               
+            </section>
+
+            <section class="section_mood  absolute hidden">
+
+                <div class="w-screen h-32 bg-red-800">
+                    <h3> mood</h3>
+                </div>
+               
+            </section>
+
+            <section class="section_podcast  absolute hidden">
+
+                <div class="w-screen h-32 bg-red-800">
+                        <h3>podcast</h3>
+                </div>
+               
+            </section>
+
+
+
+
+            <!-- <audio id="backgroundAudio" autoplay>
+                        <source src="./Image/1706881074312ti8euu6-voicemaker.in-speech.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio> -->
+             
+
+
+       
+
+    </div>
+
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <script src="./src/script.js"></script>
+    <script src="./src/Page/All.js"></script>
+    <script src="./src/Page/Burger.js"></script>
+    <script src="./src/Page/Trending.js"></script>
+
+</body>
+
+</html>
