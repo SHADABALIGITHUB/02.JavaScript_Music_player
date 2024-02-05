@@ -11,6 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Autour+One&family=DM+Sans:opsz@9..40&family=Dancing+Script:wght@500&family=Inknut+Antiqua:wght@900&family=Kalam:wght@700&family=Roboto&family=Roboto+Mono:ital,wght@1,700&family=Vina+Sans&display=swap"
         rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="data:">
+
 
 </head>
 
@@ -45,7 +47,7 @@
        </div>
 
         <!-- Icons Section -->
-        <div class="mb-8 ">
+        <div class="mb-8 space-y-4">
             <!-- Icon 1 -->
             <div class="text-white flex">
                 <i data-lucide="home"></i>
@@ -59,38 +61,38 @@
             </div>
 
             <!-- Icon 3 -->
-            <div class="text-white">
-                <i class="fas fa-circle text-4xl"></i>
-                <p class="text-sm">Icon 3</p>
+            <div class="text-white flex">
+                <i data-lucide="calendar-heart"></i>
+                <p class="text-sm font-bold">favourite</p>
             </div>
 
             <!-- Icon 4 -->
-            <div class="text-white">
-                <i class="fas fa-square text-4xl"></i>
-                <p class="text-sm">Icon 4</p>
+            <div class="text-white flex">
+                <i data-lucide="history"></i>
+                <p class="text-sm font-bold"> history </p>
             </div>
         </div>
 
         <!-- Social Media Icons Section -->
-        <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-4 absolute bottom-2">
             <!-- Instagram -->
             <a href="#" class="text-pink-600">
-                <i class="fab fa-instagram text-2xl"></i>
+                <i data-lucide="instagram"></i>
             </a>
 
             <!-- Twitter -->
             <a href="#" class="text-blue-400">
-                <i class="fab fa-twitter text-2xl"></i>
+                <i> <img class="w-6 h-6" src="./Image/tweeter.png" alt=""></i>
             </a>
 
             <!-- Facebook -->
             <a href="#" class="text-blue-600">
-                <i class="fab fa-facebook text-2xl"></i>
+                <i data-lucide="facebook"></i>
             </a>
 
             <!-- YouTube -->
             <a href="#" class="text-red-600">
-                <i class="fab fa-youtube text-2xl"></i>
+                <i data-lucide="youtube"></i>
             </a>
         </div>
     </div>
@@ -123,47 +125,52 @@
 
             </section>
 
-            <section class="section_All w-screen absolute flex">
+            <section class="section_All w-screen absolute flex justify-center overflow-hidden">
 
                 
 
-                      <div  class="my-divs w-11/12 sm:w-1/2 md:w-1/3 h-40 sm:h-80">
+                      <div  class="my-divs w-screen m-0 md:w-11/12 h-36 sm:h-80 flex p-2 sm:p-5 gap:2 sm:gap-3 overflow-hidden">
+       
 
+                             <div id="scrolling_div1" class="transition-all duration-1000 cursor-pointer absolute  ease-in m-0 w-1/3 h-4/5 overflow-hidden rounded-3xl flex">
 
-                             <div id="scrolling_div1" class="absolute shad m-0 w-1/2 h-full bg-cover bg-clip-padding bg-no-repeat rounded-3xl" style="background-image: url('./Image/Tera_Bina.jpeg')">
+                                   <img id="image_scrolling" class="w-full absolute top-0 transition-all  rounded-3xl  md:h-96" src="./Image/Night_beats.jpg" alt="Not" style="transition-duration: 2s;">
+                                   <h4 id="text_banner_one" class="absolute transition-all duration-1000 text-zinc-900 font-Rampart cursor-pointer top-1/2 left-1/2 -translate-x-1/2 text-sm sm:text-4xl font-extrabold opacity-70" style="transition-duration: 2s;"> Night Beat </h4>
 
-                                   
-
-                             </div>
-
-                             <div id="scrolling_div2" class="left-1/2 absolute shad m-0 w-1/2 h-full bg-cover bg-clip-padding bg-no-repeat rounded-3xl" style="background-image: url('./Image/Bollywood.png');">
-
-                              
-
-                             </div>
-
-                             <div id="scrolling_div3" class="absolute shad m-0 w-1/2  h-full bg-cover bg-clip-padding bg-no-repeat rounded-3xl" style="background-image: url('./Image/hollywood.jpg');">
-
-                              
+                                   <!-- fourth  -->
+                                   <div id="image_scrolling_Overlay" class=" top-full w-full transition-all z-50 duration-1000 md:h-96 absolute bg-blue-900 opacity-50 rounded-3xl" style="transition-duration: 2s;"></div>
+                                   <img id="image_scrolling_four" class="w-full absolute transition-all duration-1000  top-full rounded-3xl md:h-96" src="./Image/bg-4.jpg" alt="Not" style="transition-duration: 2s;">
+                                   <h4 id="text_banner_four" class="absolute cursor-pointer transition-all duration-1000  top-1/2 left-1/2 -translate-x-1/2 text-sm sm:text-4xl font-Glitch font-extrabold opacity-70 text-yellow-200" style="top: 150%;transition-duration: 2s;"> 19's Hit </h4>
+   
+                                 
 
                              </div>
-                             <div id="scrolling_div4" class="left-1/2 absolute shad  m-0 w-1/2 h-full bg-cover bg-clip-padding bg-no-repeat rounded-3xl" style="background-image: url('./Image/Hookah.jpg');">
+                    
 
-                              
+                             <div id="scrolling_div2" class="left-1/2 absolute shad m-0 w-1/3 h-4/5 overflow-hidden rounded-3xl">
 
-                             </div>
-                             <div id="scrolling_div5" class="absolute shad m-0 w-1/2 h-full bg-cover bg-clip-padding bg-no-repeat rounded-3xl" style="background-image: url('./Image/hiphopwebp');">
-
-                              
-
-                             </div>
-                             <div id="scrolling_div6" class="left-1/2 absolute shad m-0 w-1/2 h-full bg-cover bg-clip-padding bg-no-repeat rounded-3xl" style="background-image: url(./Image/danny-howe-bn-D2bCvpik-unsplash.png);">
-
-                              
-
-                             </div>
-
+                                 
+                                <img id="image_scrolling_two" class="w-full absolute top-0 transition-all  rounded-3xl  md:h-96" src="./Image/classic.jpg" alt="Not" style="transition-duration: 2s;">
+                                <h4 id="text_banner_two" class="absolute transition-all duration-1000 text-zinc-900 font-Google cursor-pointer top-1/2 left-1/2 -translate-x-1/2 text-sm sm:text-4xl font-extrabold opacity-70" style="transition-duration: 2s;"> Classical </h4>
+      <!-- fifth -->
                                   
+                                <div id="image_scrolling_Overlay4" class=" top-full w-full transition-all z-50 duration-1000 md:h-96 absolute bg-orange-900 opacity-50 rounded-3xl" style="transition-duration: 2s;"></div>
+                                <img id="image_scrolling_five" class="w-full absolute transition-all duration-1000  top-full rounded-3xl md:h-96" src="./Image/bg_5.jpg" alt="Not" style="transition-duration: 2s;">
+                                <h4 id="text_banner_five"class="absolute cursor-pointer transition-all duration-1000  top-1/2 left-1/2 -translate-x-1/2 text-sm sm:text-4xl font-Glitch font-extrabold opacity-70 text-orange-200" style="top: 150%;transition-duration: 2s;"> Dancing Song </h4>
+
+                              
+
+                             </div>
+
+                             <div id="scrolling_div3" class="absolute shad m-0 w-1/3 h-4/5 overflow-hidden rounded-3xl" style="left:90%">
+
+                                <div class="w-full md:h-96 absolute bg-red-900 opacity-50"></div> 
+                                <img class="w-full md:h-96" src="./Image/bg_3.jpg" alt="Not">
+                                <h4 class="absolute cursor-pointer top-1/2 left-1/2 -translate-x-1/2 text-sm sm:text-4xl font-Rye font-extrabold opacity-70 text-yellow-200"> Bollywood </h4>
+
+                              
+
+                             </div>        
                                 
 
                       </div>
@@ -225,8 +232,136 @@
                 </div>
                
             </section>
+           
 
 
+
+
+            <!-- section new Release -->
+
+
+            <section id="new_release" class="mt-44 sm:mt-80">
+
+                  
+                <div>
+                    <h2 class="text-white m-1 text-2xl font-serif"> New Release</h2>
+                </div>
+            <div id="Release_list" class="w-screen m-0 flex overflow-scroll">
+                <div id="play1" class="w-32 md:w-64 cursor-pointer border-black border-2 border-solid md:h-48 h-28 m-1 rounded-b-2xl">
+
+                       <div class="rounded-2xl">
+                          <img src="./Image/badtameez_dil.jpg" alt="">
+                       </div>
+                       <div class="">
+                              
+                           <h3 class="text-white p-2 text-xs md:text-sm font-bold font-Robot overflow-hidden whitespace-nowrap"> Badtameez Dil (ya Jawani hai dewa...ni) </h3>
+
+                       </div>
+
+                </div>
+                <div id="play2" class="w-32 md:w-64 cursor-pointer h-28 md:h-48 border-black border-2 border-solid  m-1 rounded-b-2xl">
+
+                    <div class="rounded-2xl">
+                       <img src="./Image/Hookah.jpg" alt="">
+                    </div>
+                    <div class="">
+                           
+                        <h3 class="text-white p-2 text-sm h-full font-bold font-Robot overflow-hidden whitespace-nowrap shadow-inner shadow-black"> Hookah Bar </h3>
+
+                    </div>
+
+                </div>
+
+                <div id="play3" class="w-32 md:w-64 cursor-pointer h-28 md:h-48 border-black border-2 border-solid  m-1 rounded-b-2xl">
+
+                    <div class="rounded-2xl">
+                       <img src="./Image/gone_girl.jpg" alt="">
+                    </div>
+                    <div class="">
+                           
+                        <h3 class="text-white p-2 text-sm font-bold font-Robot overflow-hidden whitespace-nowrap"> Gone Girl </h3>
+
+                    </div>
+
+                </div>
+
+                <div id="play4" class="w-32 md:w-64 cursor-pointer h-28 md:h-48 border-black border-2 border-solid  m-1 rounded-b-2xl">
+
+                    <div class="rounded-2xl">
+                       <img src="./Image/OhOH_jane_jaana.jpg" alt="">
+                    </div>
+                    <div class="">
+                           
+                        <h3 class="text-white p-2 text-sm font-bold font-Robot overflow-hidden whitespace-nowrap"> Salman Khan </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            </section>
+
+
+    <!-- PLaying section   -->
+
+             
+
+<section id="play_bottom_on_start" class="play_Section cursor-pointer">
+
+    <section id="playe_line_for_play" class="absolute bottom-5 sm:bottom-3 left-0">
+
+            
+                  <audio id="myAudio">
+                            <source id="playing_song_audio" src="./DataBase/videoplayback" type="audio/mp3">
+                     
+                   </audio>
+            </section>
+
+            <section id="Bar_player_for_image"  class="w-screen h-14 md:h-16 bg-zinc-900 absolute bottom-0">
+                       
+                   <div id="play_div_bottom" class="p-3 flex gap-5 items-center">
+
+
+
+                         <img id="playing_song_image" class="w-8 h-8 bg-cover" src="./Image/Hookah.jpg" alt="Hookah">
+
+                      <div> 
+                         <h3 id="playing_song_name" class="text-white max-w-20 overflow-hidden text-xs whitespace-nowrap"> Hookah bar </h3>
+                         <h5 id="playing_song_artist" class="text-white font-light text-xs">artist YoYo honey</h5>
+
+                    </div>
+
+                      <i class="hidden sm:block"></i>
+                     <div>
+                      <i class="text-xl" data-lucide="list-music" color="white"></i>
+                    </div>
+                    <div>
+
+                      <i data-lucide="arrow-down" color="white"></i>
+                    </div>
+
+                <div class="play_div bg-red-800 rounded-full">
+                      <i class="play size-9" data-lucide="play-circle" color="white"></i>
+                      <i class="pause hidden size-9" data-lucide="pause-circle" color="white"></i>
+
+                </div>
+
+
+
+
+
+
+
+                           
+
+                           
+
+                   </div>
+                  
+            </section>
+
+        </section>
 
 
             <!-- <audio id="backgroundAudio" autoplay>
@@ -250,6 +385,7 @@
     <script src="./src/Page/All.js"></script>
     <script src="./src/Page/Burger.js"></script>
     <script src="./src/Page/Trending.js"></script>
+    <script src="./src/Page/start_play.js"></script>
 
 </body>
 

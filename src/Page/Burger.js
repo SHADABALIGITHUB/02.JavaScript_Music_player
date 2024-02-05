@@ -15,4 +15,3 @@ Cross.addEventListener('click',close);
     
   
 
-

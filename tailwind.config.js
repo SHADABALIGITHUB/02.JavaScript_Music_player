@@ -6,7 +6,17 @@ module.exports = {
   ],
   
   theme: {
-    extend: {},
+    extend: {
+
+      fontFamily: {
+        Rampart: ["Rampart One", "cursive"],
+        Google:["Sixtyfour", "sans-serif"],
+        Glitch:["Rubik Glitch Pop"],
+        Rye:["Rye",'serif'],
+        Robot:["'Roboto Slab", "serif"],
+
+       },
+    },
   },
   plugins: [],
 }
