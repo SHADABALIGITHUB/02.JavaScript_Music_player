@@ -1,42 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import { Button, Container } from 'react-bootstrap';
+
+
 import { Alert } from 'react-bootstrap';
+import { BrowserRouter , Route, Routes } from 'react-router-dom';
+import Dashboard from './components/Dasboard/Dashboard';
+import Landing from './components/LandingPage/Landing';
+
+const ContainerFun:React.FC=()=>{
+  
+  return(
+    <div className='mt-5  container'>
+
+      <Alert variant="danger" className='flex flex-col items-center justify-centre'>
+    <Alert.Heading className="font-myfamily" style={{fontWeight:"bold"}}>Ops  404 ! You got an error!</Alert.Heading>
+    <p className="font-family">Change the Url Not a Valid one </p>
+      </Alert> 
+  </div>
+  );
+}
 
 
 function App() {
-  const [count, setCount] = useState(0)
+
+ 
+ 
 
   return (
-    <Container className='mt-5 '>
-      <div className='container mb-5'>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <Alert dismissible variant="danger">
-      <Alert.Heading>Oh snap! You got an error!</Alert.Heading>
-      <p>Change this and that and try again.</p>
-        </Alert> 
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card ">
-        <button className='w-25 m-4 btn btn-outline-success' onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <Button variant="primary">Primary Button</Button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </Container>
+
+
+    <BrowserRouter>
+      <Routes>
+           <Route path="/" element={<Landing/>} />
+           <Route path="/dashboard" element={<Dashboard/>} />
+           <Route path="*" element={<ContainerFun/>}/>
+      </Routes>
+    </BrowserRouter>
+
+   
   )
 }
 
 export default App
+
