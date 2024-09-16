@@ -3,6 +3,7 @@ import { Container,Row,Col } from 'react-bootstrap'
 import NavbarComponent from './NavbarComponent'
 import welcome from "../../assets/welcome.mp3"
 import Sidebar from '../SideBar/Sidebar'
+import Vite from '../CreateReactProject/Vite'
 
 
 
@@ -16,6 +17,12 @@ const Dashboard:React.FC = () => {
        
 
       },[])
+
+      
+
+
+
+
   return (
     <Container fluid className='relative'>
     <div className='absolute'>
@@ -45,8 +52,9 @@ const Dashboard:React.FC = () => {
 
       <Row>
 
-      <Col className='bg-red-900 d-flex align-items-center justify-content-center '> Using  </Col>
-      <Col className='bg-blue-900'> 3    </Col>
+      <Vite heading="How to Create a React project using vite" description="Steps to create" />
+      <Vite heading="How to Create a React project using vite" description="Steps to create"/>
+      
       
 
       </Row>

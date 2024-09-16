@@ -1,10 +1,25 @@
 import React from 'react'
+import { Col } from 'react-bootstrap'
 
-const Vite:React.FC = () => {
+export type Prop={
+
+    heading:string,
+    description:string
+
+}
+
+const Vite:React.FC<Prop> = ({heading,description}) => {
   return (
-    <div>
-      
-    </div>
+    <Col className='font-myfamily'> 
+
+        <h6 className='font-bold'>{heading}</h6>
+
+         <p>
+             {description}
+         </p>
+
+
+    </Col>
   )
 }
 
