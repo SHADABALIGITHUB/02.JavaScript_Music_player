@@ -3,11 +3,11 @@ import { Col } from 'react-bootstrap'
 import {Button} from 'react-bootstrap'
 
 export type Prop={
-
+    // Key:string|number,
     heading:string,
     description:string,
     steps:string[],
-
+   
 }
 
 const Vite:React.FC<Prop> = ({heading,description,steps}) => {

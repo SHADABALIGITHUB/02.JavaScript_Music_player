@@ -1,22 +1,27 @@
-export const CreateReactAppData={
-    heading:"How to Create a React project using Create React App",
-    description:"Create React App is a tool that allows you to quickly set up a new React project with zero configuration. It is a popular tool among beginners because it is easy to use and requires minimal setup. Here are the steps to create a new React project using Create React App:",
-    steps:[
-        "Install Node.js: Create React App requires Node.js to be installed on your machine. You can download and install Node.js from the official website.",
-        "Install Create React App: Once you have Node.js installed, you can install Create React App by running the following command in your terminal:",
-        "Create a new React project: To create a new React project, run the following command in your terminal: npx create-react-app myappname",
-        "https://res.cloudinary.com/ddnum51yo/image/upload/v1726478879/ReactDocs/mmivualtg7ph1gvg3suy.png",
-        "use cd myappname to navigate to the project directory.",
-        "https://res.cloudinary.com/ddnum51yo/image/upload/v1726479287/ReactDocs/bqv4b9sy3ylwktnsbrze.png",
-        "use npm start to start the development server.",
-        "https://res.cloudinary.com/ddnum51yo/image/upload/v1726479411/ReactDocs/createreactwebpagestart.png",
-        "Open the project in your browser: Once the development server is running, you can open the project in your browser by navigating to http://localhost:3000.",
-        "You now have a new React project set up using Create React App! You can start building your application by editing the files in the src directory."
-    ]
-}
+import { PagesDataType } from "../components/Test";
 
-export const ViteCreateData={
-    heading:"How to Create a React project using vite (currently used by developers in 2024)",
+export const PagesData:PagesDataType= {
+1:{
+    1:{
+        heading:"How to Create a React project using Create React App",
+        description:"Create React App is a tool that allows you to quickly set up a new React project with zero configuration. It is a popular tool among beginners because it is easy to use and requires minimal setup. Here are the steps to create a new React project using Create React App:",
+        steps:[
+            "Install Node.js: Create React App requires Node.js to be installed on your machine. You can download and install Node.js from the official website.",
+            "Install Create React App: Once you have Node.js installed, you can install Create React App by running the following command in your terminal:",
+            "Create a new React project: To create a new React project, run the following command in your terminal: npx create-react-app myappname",
+            "https://res.cloudinary.com/ddnum51yo/image/upload/v1726478879/ReactDocs/mmivualtg7ph1gvg3suy.png",
+            "use cd myappname to navigate to the project directory.",
+            "https://res.cloudinary.com/ddnum51yo/image/upload/v1726479287/ReactDocs/bqv4b9sy3ylwktnsbrze.png",
+            "use npm start to start the development server.",
+            "https://res.cloudinary.com/ddnum51yo/image/upload/v1726479411/ReactDocs/createreactwebpagestart.png",
+            "Open the project in your browser: Once the development server is running, you can open the project in your browser by navigating to http://localhost:3000.",
+            "You now have a new React project set up using Create React App! You can start building your application by editing the files in the src directory."
+        ]
+
+
+    },
+    2:{
+        heading:"How to Create a React project using vite (currently used by developers in 2024)",
     description:"Vite is a build tool that is designed to be fast and lightweight. It is a great choice for setting up React projects because it provides instant server start and hot module replacement. Here are the steps to create a new React project using Vite:",
     steps:[
         "Install Node.js: Vite requires Node.js to be installed on your machine. You can download and install Node.js from the official website.",
@@ -31,33 +36,89 @@ export const ViteCreateData={
         "Open the project in your browser: Once the development server is running, you can open the project in your browser by navigating to http://localhost:5173.",
         "You now have a new React project set up using Vite! You can start building your application by editing the files in the src directory."
     ]
+
+    },
+    3:{
+        heading:"",
+        description:"",
+        steps:[]
+
+
+    },
+    4:{
+        heading:"",
+        description:"",
+        steps:[]
+
+    }
+    
+
+},
+2:{
+    1:{
+        heading:"Tailwind CSS Setup In Your React Project",
+        description:"Tailwind CSS is a utility-first CSS framework",
+        steps:[
+            'Go To Google Search Your Type tailwind for vite or for create app',
+            'Select the official tailwind website',
+            'Select the installation guide for vite projects ',
+            'https://dfdf.png',
+            "set three @tailwind base ,utils,components into index.css file  add   content: [ './index.html',<br/>'./src/**/*.{js,ts,jsx,tsx}',<br/>'./public/index.html',]",
+        ]
+    },
+    2:{
+         
+        heading:"",
+        description:"",
+        steps:[]
+
+    }
+ }
+
 }
+
+
+
 
 export interface SidebarItem {
     heading: string;
     description: string;
+    mark:boolean;
+    review:boolean;
+    
 }
 
 export const SidebarData=[
 
             {
-             
-                heading:"Using Vite",
-                description:"React+JavaScript",
-
-            },
-            {
-                heading:"Using Vite",
-                description:"React+Typescript",
-
-            },
-            {
                 heading:"Using Create React App",
                 description:"React+JavaScript",
+                mark:false,
+                review:false
+
+                
+
+            },
+            {   heading:"Using Vite",
+                description:"React+JavaScript",
+                mark:false,
+                review:false
+                
+
+            },
+            { 
+                heading:"Using Vite",
+                description:"React+Typescript",
+                mark:false,
+                review:false
+                
+                
             },
             {
                 heading:"Using Create React App",
                 description:"React+TypeScript",
+                mark:false,
+                review:false
             }
         
 

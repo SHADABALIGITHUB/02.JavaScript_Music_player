@@ -3,12 +3,12 @@ import { Container,Row,Col } from 'react-bootstrap'
 import NavbarComponent from './NavbarComponent'
 import welcome from "../../assets/welcome.mp3"
 import Sidebar from '../SideBar/Sidebar'
-import Vite from '../CreateReactProject/Vite'
-
-import { CreateReactAppData } from '../../Data/Create'
-import { ViteCreateData } from '../../Data/Create'
-
+// import Vite from '../CreateReactProject/Vite'
 import { SidebarData } from '../../Data/Create'
+// import { PageDataTypes } from '../../Data/Create'
+// import { PagesData } from '../../Data/Create'
+import Test from '../Test'
+// import { PageDataTypes } from '../../Data/Create'
  
 
 
@@ -16,7 +16,8 @@ const Dashboard:React.FC = () => {
 
  
 
-  const [item,SetItem]=useState<number>(0);
+  const [item,SetItem]=useState<number>(1);
+  const [page,SetPage]=useState<number>(1);
     const audioRef=useRef<HTMLAudioElement | null>(null)
       useEffect(()=>{
  
@@ -28,10 +29,14 @@ const Dashboard:React.FC = () => {
       },[])
 
 
+     
+
+
 
       
-
-
+      
+        
+    
 
 
   return (
@@ -64,32 +69,15 @@ const Dashboard:React.FC = () => {
 
       <Col>
 
-       
+     
+     <Test page={page} item={item}/>
 
-      {
-
-        item===0?
 
       
-      <Vite heading={ViteCreateData.heading} description={ViteCreateData.description}  steps={ViteCreateData.steps} />
+     
 
-       :
-
-        item===1?
-
-       <p className='font-myfamily font-bold text-sky-900'> Vite + typscript Simple Choice React and typescript instead of Javascript  </p>
-
-      :
-
-       item===2?
-
-       
-       <Vite heading={CreateReactAppData.heading} description={CreateReactAppData.description} steps={CreateReactAppData.steps} /> 
-       :
-       
-       <h2> workiingon it </h2>
-
-      }
+     
+    
       
    
 

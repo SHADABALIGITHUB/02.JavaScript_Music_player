@@ -12,7 +12,8 @@ const Sidebar: React.FC<Maintype> = ({ item, setitem }) => {
 
     const handle=(index:number)=>{
 
-      setitem(index);
+      setitem(index+1);
+      
     }
   return (
     <ListGroup as="ul" className="-z-0 relative">
