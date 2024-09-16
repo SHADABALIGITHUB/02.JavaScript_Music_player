@@ -39,14 +39,17 @@ export const PagesData:PagesDataType= {
 
     },
     3:{
-        heading:"",
+        heading:"Its Same as Vite + JavaScript Only one Arrow key Down",
         description:"",
-        steps:[]
+        steps:[
+            'Need to Shift Down arrow button to Select the Typscript instead of JavaScript',
+            'Vite Handle Rest of the Work'
+        ]
 
 
     },
     4:{
-        heading:"",
+        heading:"Working on this Part",
         description:"",
         steps:[]
 
@@ -77,7 +80,11 @@ export const PagesData:PagesDataType= {
 
 }
 
-
+export interface SideBarPage{
+      [MainPage:number]:{
+            [SubPage:number]:SidebarItem
+      }
+}
 
 
 export interface SidebarItem {
@@ -88,9 +95,10 @@ export interface SidebarItem {
     
 }
 
-export const SidebarData=[
+export const SidebarData:SideBarPage={
 
-            {
+          1:{
+            1:{
                 heading:"Using Create React App",
                 description:"React+JavaScript",
                 mark:false,
@@ -99,14 +107,14 @@ export const SidebarData=[
                 
 
             },
-            {   heading:"Using Vite",
+           2:{   heading:"Using Vite",
                 description:"React+JavaScript",
                 mark:false,
                 review:false
                 
 
             },
-            { 
+            3:{ 
                 heading:"Using Vite",
                 description:"React+Typescript",
                 mark:false,
@@ -114,12 +122,28 @@ export const SidebarData=[
                 
                 
             },
-            {
+            4:{
                 heading:"Using Create React App",
                 description:"React+TypeScript",
                 mark:false,
                 review:false
             }
+        },
+        2:{
+            1:{
+                heading:"Tailwind CSS Setup",
+                description:"React for Typscript",
+                mark:false,
+                review:false
+            },
+            2:{
+                heading:"Bootstrap CSS Setup",
+                description:"React for Beginners",
+                mark:false,
+                review:false,
+
+            }
+        }
         
 
-        ];
+    };

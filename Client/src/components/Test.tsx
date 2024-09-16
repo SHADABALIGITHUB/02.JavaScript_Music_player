@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Dispatch, SetStateAction } from 'react';
 
 // Define the types (if not already imported from a separate file)
 interface Page {
@@ -17,14 +17,15 @@ import { PagesData } from '../Data/Create';
 
 type PropType={
     page:number,
-    item:number
+    item:number,
+    Setpage:Dispatch<SetStateAction<number>>
 }
 
 console.log()
 
 import Vite from './CreateReactProject/Vite';
 
-const Test: React.FC<PropType>= ({page,item}) => {
+const Test: React.FC<PropType>= ({page,item,Setpage}) => {
   return (
     <div key={page+item}>
 
@@ -40,7 +41,7 @@ const Test: React.FC<PropType>= ({page,item}) => {
                         Object.keys(PagesData[Number(sectionId)]).map((subsection)=>{
                              const subpageNum=PagesData[Number(sectionId)][Number(subsection)]
                                if(item===Number(subsection))  
-                               return <Vite key={subsection} heading={subpageNum.heading} description={subpageNum.description}  steps={subpageNum.steps} />
+                               return <Vite key={subsection} heading={subpageNum.heading} description={subpageNum.description}  steps={subpageNum.steps} setPage={Setpage} />
                                  
                                     
                                  

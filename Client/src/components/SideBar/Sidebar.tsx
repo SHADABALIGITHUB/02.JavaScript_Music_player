@@ -1,41 +1,61 @@
-import React from "react";
-import ListGroup from "react-bootstrap/ListGroup";
-import { Dispatch,SetStateAction } from "react";
-import { SidebarItem } from "../../Data/Create";
+// import React from "react";
+// import ListGroup from "react-bootstrap/ListGroup";
+// import { Dispatch,SetStateAction } from "react";
+// import { SidebarData } from "../../Data/Create";
 
-interface Maintype {
-  item: SidebarItem[];
-  setitem:Dispatch<SetStateAction<number>>
-}
+// interface Maintype {
+//   setitem:Dispatch<SetStateAction<number>>,
+//   page:number,
+//   subpage?:number
+// }
 
-const Sidebar: React.FC<Maintype> = ({ item, setitem }) => {
+// const Sidebar: React.FC<Maintype> = ({setitem ,page}) => {
 
-    const handle=(index:number)=>{
+//     const handle=(index:number)=>{
 
-      setitem(index+1);
+//       setitem(index);
       
-    }
-  return (
-    <ListGroup as="ul" className="-z-0 relative">
-      {item.map((SidebarItem, index) => {
-        return (
-          <ListGroup.Item
-            as="li"
-            key={index}
-            className="d-flex justify-content-between align-items-start"
-            onClick={()=>{handle(index)}}
-          >
-            <div className="ms-2 me-auto  font-myfamily text-blue-500 cursor-pointer">
-              <div className="fw-bold  text-black">{SidebarItem.heading}</div>
-              <span className="text-sm underline">
-                {SidebarItem.description}
-              </span>
-            </div>
-          </ListGroup.Item>
-        );
-      })}
-    </ListGroup>
-  );
-};
+//     }
+//   return (
+//     <ListGroup as="ul" className="-z-0 relative">
 
-export default Sidebar;
+      
+      
+      
+      
+//         {
+//             Object.keys(SidebarData).map((heading)=>{
+//                 const headingNum=Number(heading);
+//                 if(headingNum===page)
+//                  return <div key={heading}>
+//                     {
+//                         Object.keys(SidebarData[Number(heading)]).map((subheading)=>{
+//                              const values=SidebarData[Number(heading)][Number(subheading)];
+                            
+//                               return <ListGroup.Item
+//                                     as="li"
+//                                     key={subheading}
+//                                     className={`d-flex justify-content-between ${values.mark?"bg-success":""} align-items-start`}
+//                                     onClick={()=>{handle(Number(subheading))}}
+//                                   >
+//                                     <div className="ms-2 me-auto  font-myfamily text-blue-500 cursor-pointer">
+//                                       <div className="fw-bold  text-black">{values.heading}</div>
+//                                       <span className="text-sm underline">
+//                                         {values.description}
+//                                       </span>
+//                                     </div>
+//                                   </ListGroup.Item>
+                            
+//                         })
+//                     }
+//                 </div>
+//                  })
+//         }
+    
+    
+
+//     </ListGroup>
+//   );
+// };
+
+// export default Sidebar;

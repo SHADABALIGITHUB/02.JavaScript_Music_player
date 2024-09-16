@@ -1,14 +1,10 @@
 import React,{useRef,useEffect,useState} from 'react'
-import { Container,Row,Col } from 'react-bootstrap'
+import { Container,Col } from 'react-bootstrap'
 import NavbarComponent from './NavbarComponent'
 import welcome from "../../assets/welcome.mp3"
-import Sidebar from '../SideBar/Sidebar'
-// import Vite from '../CreateReactProject/Vite'
-import { SidebarData } from '../../Data/Create'
-// import { PageDataTypes } from '../../Data/Create'
-// import { PagesData } from '../../Data/Create'
+// import Sidebar from '../SideBar/Sidebar'
 import Test from '../Test'
-// import { PageDataTypes } from '../../Data/Create'
+
  
 
 
@@ -49,28 +45,23 @@ const Dashboard:React.FC = () => {
     </div>
 
   <div className='fixed z-20 top-0 left-0 w-screen'>
-    <NavbarComponent />
+    <NavbarComponent setitem={SetItem} page={page} />
   </div>
 
    
   <div className='mt-20'>
-    <div className='flex '>
 
-     <div className='w-32 overflow-hidden'>
+    
 
-     <Sidebar item={SidebarData} setitem={SetItem}/>
-
-     </div>
-     <Col className='flex-1 p-4'>
+     
+     <Col className='flex flex-col p-4'>
 
       <p className='font-myfamily'>Both Create React App (CRA) and Vite are popular tools for setting up React applications, but they have different philosophies and technical approaches. Here’s a detailed comparison and explanation of each:</p>
  
-       <Row>
-
-      <Col>
+       
 
      
-     <Test page={page} item={item}/>
+      <Test page={page} item={item} Setpage={SetPage}/>
 
 
       
@@ -84,13 +75,11 @@ const Dashboard:React.FC = () => {
       
 
       </Col>
-      </Row>
-
-     </Col>
+      
     </div>
    
       
-  </div>
+ 
   </Container>
   )
 }
