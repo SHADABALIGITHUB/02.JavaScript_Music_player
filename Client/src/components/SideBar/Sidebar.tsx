@@ -1,48 +1,40 @@
-import React from 'react'
-import Badge from 'react-bootstrap/Badge';
-import ListGroup from 'react-bootstrap/ListGroup';
+import React from "react";
+import ListGroup from "react-bootstrap/ListGroup";
+import { Dispatch,SetStateAction } from "react";
+import { SidebarItem } from "../../Data/Create";
 
-const Sidebar:React.FC = () => {
-  return (
-    <ListGroup as="ol" numbered>
-    <ListGroup.Item
-      as="li"
-      className="d-flex justify-content-between align-items-start"
-    >
-      <div className="ms-2 me-auto">
-        <div className="fw-bold">Subheading</div>
-        Cras justo odio
-      </div>
-      <Badge bg="primary" pill>
-        14
-      </Badge>
-    </ListGroup.Item>
-    <ListGroup.Item
-      as="li"
-      className="d-flex justify-content-between align-items-start"
-    >
-      <div className="ms-2 me-auto">
-        <div className="fw-bold">Subheading</div>
-        Cras justo odio
-      </div>
-      <Badge bg="primary" pill>
-        14
-      </Badge>
-    </ListGroup.Item>
-    <ListGroup.Item
-      as="li"
-      className="d-flex justify-content-between align-items-start"
-    >
-      <div className="ms-2 me-auto">
-        <div className="fw-bold">Subheading</div>
-        Cras justo odio
-      </div>
-      <Badge bg="primary" pill>
-        14
-      </Badge>
-    </ListGroup.Item>
-  </ListGroup>
-  )
+interface Maintype {
+  item: SidebarItem[];
+  setitem:Dispatch<SetStateAction<number>>
 }
 
-export default Sidebar
+const Sidebar: React.FC<Maintype> = ({ item, setitem }) => {
+
+    const handle=(index:number)=>{
+
+      setitem(index);
+    }
+  return (
+    <ListGroup as="ul" className="-z-0 relative">
+      {item.map((SidebarItem, index) => {
+        return (
+          <ListGroup.Item
+            as="li"
+            key={index}
+            className="d-flex justify-content-between align-items-start"
+            onClick={()=>{handle(index)}}
+          >
+            <div className="ms-2 me-auto  font-myfamily text-blue-500 cursor-pointer">
+              <div className="fw-bold  text-black">{SidebarItem.heading}</div>
+              <span className="text-sm underline">
+                {SidebarItem.description}
+              </span>
+            </div>
+          </ListGroup.Item>
+        );
+      })}
+    </ListGroup>
+  );
+};
+
+export default Sidebar;
