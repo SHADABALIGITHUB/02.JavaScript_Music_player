@@ -61,7 +61,7 @@ const Dashboard:React.FC = () => {
        
 
      
-      <Test page={page} item={item} Setpage={SetPage}/>
+      <Test page={page} item={item} Setpage={SetPage} setSubpage={SetItem}/>
 
 
       

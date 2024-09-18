@@ -18,14 +18,15 @@ import { PagesData } from '../Data/Create';
 type PropType={
     page:number,
     item:number,
-    Setpage:Dispatch<SetStateAction<number>>
+    Setpage:Dispatch<SetStateAction<number>>,
+    setSubpage:Dispatch<SetStateAction<number>>
 }
 
 console.log()
 
 import Vite from './CreateReactProject/Vite';
 
-const Test: React.FC<PropType>= ({page,item,Setpage}) => {
+const Test: React.FC<PropType>= ({page,item,Setpage,setSubpage}) => {
   return (
     <div key={page+item}>
 
@@ -41,7 +42,7 @@ const Test: React.FC<PropType>= ({page,item,Setpage}) => {
                         Object.keys(PagesData[Number(sectionId)]).map((subsection)=>{
                              const subpageNum=PagesData[Number(sectionId)][Number(subsection)]
                                if(item===Number(subsection))  
-                               return <Vite key={subsection} heading={subpageNum.heading} description={subpageNum.description}  steps={subpageNum.steps} setPage={Setpage} />
+                               return <Vite key={subsection} heading={subpageNum.heading} description={subpageNum.description}  steps={subpageNum.steps} setPage={Setpage} setSubpage={setSubpage} />
                                  
                                     
                                  

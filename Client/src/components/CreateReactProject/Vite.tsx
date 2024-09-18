@@ -7,13 +7,23 @@ export type Prop = {
   heading: string,
   description: string,
   steps: string[],
-  setPage: Dispatch<SetStateAction<number>>
+  setPage: Dispatch<SetStateAction<number>>,
+  setSubpage:Dispatch<SetStateAction<number>>
+
 };
 
-const Vite: React.FC<Prop> = ({ heading, description, steps,setPage }) => {
+const Vite: React.FC<Prop> = ({ heading, description, steps,setPage,setSubpage }) => {
     const totalPages = Object.values(PagesData).length;
     
-     
+     const handlePage=(a:number)=>{
+        if(a==1){
+        setPage((prev) => (prev > 1 ? prev - 1 : prev));
+        }else if(a==2){
+
+        setPage(prev=>(prev<totalPages?prev+1:prev))
+        }
+        setSubpage(1);
+     }
      
   return (
     <Col className="font-myfamily">
@@ -47,12 +57,14 @@ const Vite: React.FC<Prop> = ({ heading, description, steps,setPage }) => {
           Mark Done{" "}
         </Button>
         <Button type="button" variant="outline-success"
-        onClick={()=>{setPage((prev) => (prev > 1 ? prev - 1 : prev));}}
+        onClick={()=>{handlePage(1)}}
           >
+          
           Prev 
         </Button>
+
         <Button type="button" variant="outline-success"
-         onClick={()=>{setPage(prev=>(prev<totalPages?prev+1:prev))}}
+         onClick={()=>{handlePage(2)}}
          >
           Next
         </Button>
